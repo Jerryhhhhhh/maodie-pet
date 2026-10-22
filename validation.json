@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "spritesheet_sha256": "a6b924845704ff812247841a43b3aff2655297af93dad1198848c9355a9d3932",
+  "encoded_bytes": 3011435,
+  "required_frames": 73,
+  "structural_validation_passed": true,
+  "pets_preflight_valid": true,
+  "quality_gate_passed": true,
+  "blind_cardinals_passed": true,
+  "jump": {
+    "idle_baseline": 202,
+    "jump_baselines": [
+      202,
+      190,
+      143,
+      194,
+      202
+    ],
+    "airborne_lift_pixels": 59,
+    "landing_delta_pixels": 0
+  },
+  "look_registration": {
+    "neutral_center_x": 95.0,
+    "look_centers_x": [
+      95.0,
+      95.0,
+      94.5,
+      95.0,
+      94.5,
+      95.0,
+      94.5,
+      94.0,
+      94.5,
+      94.5,
+      92.5,
+      92.0,
+      92.0,
+      93.5,
+      95.5,
+      96.0
+    ],
+    "look_widths": [
+      110,
+      110,
+      111,
+      110,
+      111,
+      110,
+      111,
+      110,
+      109,
+      111,
+      113,
+      114,
+      114,
+      109,
+      107,
+      106
+    ],
+    "maximum_center_drift_pixels": 3.0,
+    "maximum_width_ratio": 1.0754716981132075
+  },
+  "review_notes": [
+    "Near-vertical diagonal gaze has a subtle horizontal component; reviewed in labeled loop.",
+    "Minor head-perspective changes at direction-row boundaries were visually reviewed."
+  ],
+  "errors": []
+}
