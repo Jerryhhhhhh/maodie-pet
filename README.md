@@ -2,20 +2,34 @@
 
 一只会敲键盘、催回复、报错炸毛、验收哈气的真实照片风格宠物。基于「耄耋」梗制作，适用于支持 Pets 的 ChatGPT Work 环境。
 
-**[领养这只耄耋](https://chatgpt.com/s/sharepet_6ad9c35332288191add36239fb5688ce)** · **[下载精灵图](assets/maodie-spritesheet.png)** · **[下载发布包](https://github.com/Jerryhhhhhh/maodie-pet/releases/latest)**
+**[下载完整 v2 精灵图](assets/maodie-spritesheet.png)** · **[下载网页上传兼容版 v1](assets/maodie-spritesheet-web-v1.png)** · **[下载发布包](https://github.com/Jerryhhhhhh/maodie-pet/releases/latest)**
 
 ![耄耋的四个代表动作](previews/main.gif)
 
 ## 怎么使用
 
-在已启用 Pets 的对话中发送：
+### 共享链接：需要接收方具备相应功能和权限
+
+2026-10-25 收到跨账号打开共享链接时提示「你没有权限访问此对话。可能需要切换账号」的反馈。**共享链接不能保证对所有账号可用，也不能作为通用下载入口。** 此前只确认了链接创建成功和 GitHub 公开下载，没有完成另一账号的领养测试。
+
+如果你的账号已启用 Pets，可以在支持该插件的对话中尝试：
 
 ```text
 请领养并选用这个宠物：
 https://chatgpt.com/s/sharepet_6ad9c35332288191add36239fb5688ce
 ```
 
-领养会在你的宠物库中创建自己的副本。也可以下载 [PNG 精灵图](assets/maodie-spritesheet.png)，交给支持该格式的宠物工具使用。
+领养成功后会在你的宠物库中创建副本。若出现权限提示，目前无法仅凭这句话确定是接收方功能可用性、工作区共享范围，还是链接路由问题。该提示也不能证明你一定登录了错误账号。
+
+### 手动导入：有「Upload pet」入口时使用
+
+1. 下载 [网页上传兼容版 v1 PNG](assets/maodie-spritesheet-web-v1.png)。
+2. 在 ChatGPT 网页设置中，进入 **Personalization → Pet → Select pet**，找到 **Upload pet** 后上传该文件。
+3. 按界面提示选用新宠物。
+
+截至 2026-10-25，[官方 Pets 文档](https://learn.chatgpt.com/docs/pets) 将网页手动上传格式列为透明 PNG/WebP、**1536 × 1872**、不超过 20 MiB，并说明 Pets 的可用性取决于账号和工作区。如果设置里没有这个入口，下载文件不会自动解锁该功能。
+
+兼容版保留全部九组基础动画，共 57 帧，像素与完整版本的前九行一致；它不包含额外的 16 个注视方向。对于支持 v2 的 Pets 工具，继续使用 [完整 v2 PNG](assets/maodie-spritesheet.png)。
 
 ## 它会做什么
 
@@ -46,7 +60,7 @@ https://chatgpt.com/s/sharepet_6ad9c35332288191add36239fb5688ce
 
 | 项目 | 值 |
 | --- | --- |
-| 格式 | 透明 PNG，v2 |
+| 格式 | 透明 PNG，v2（主版） |
 | 图集尺寸 | 1536 × 2288 |
 | 网格 | 8 列 × 11 行 |
 | 单格尺寸 | 192 × 208 |
@@ -59,7 +73,9 @@ SHA-256：
 a6b924845704ff812247841a43b3aff2655297af93dad1198848c9355a9d3932
 ```
 
-帧顺序、播放时长与方向定义见 [pet.json](pet.json)，验证摘要见 [validation.json](validation.json)。该图集通过了本地结构、动作、方向检查和 Pets 上传前验证。
+网页上传兼容版 v1 为 **1536 × 1872、8 列 × 9 行、57 帧**；不改变前九行的任何动画像素。
+
+帧顺序、播放时长、导出格式与方向定义见 [pet.json](pet.json)，验证摘要见 [validation.json](validation.json)。主版图集通过了本地结构、动作、方向检查和 Pets 上传前验证；这些检查不等于接收方账号的领养权限验证。
 
 ## 制作与来源
 
@@ -71,4 +87,8 @@ a6b924845704ff812247841a43b3aff2655297af93dad1198848c9355a9d3932
 
 A photo-based Maodie meme cat for ChatGPT Work Pets: keyboard typing, impatient paw taps, a bristling error reaction, and a long hiss during review. Includes nine animation states and sixteen look directions.
 
-Use the **[public adoption link](https://chatgpt.com/s/sharepet_6ad9c35332288191add36239fb5688ce)** in a Pets-enabled conversation, or download the validated sprite sheet. The thinking animation is an optional alternative to typing. Custom audio and configurable session-end triggers are not provided by the current Pets tools.
+The **[shared adoption link](https://chatgpt.com/s/sharepet_6ad9c35332288191add36239fb5688ce)** requires a recipient account/workspace with compatible Pets access. Cross-account permission errors have been reported; successful link creation does not prove that every recipient can adopt it.
+
+If your web settings offer **Upload pet**, use the [v1 web-upload PNG](assets/maodie-spritesheet-web-v1.png), matching the 1536 × 1872 format currently documented by [OpenAI](https://learn.chatgpt.com/docs/pets). It preserves all nine standard animations (57 frames), but omits the sixteen look-direction frames. Use the [full v2 PNG](assets/maodie-spritesheet.png) with tools that support it. A missing Pets feature cannot be unlocked by downloading the file.
+
+The thinking animation is an optional alternative to typing. Custom audio and configurable session-end triggers are not provided by the current Pets tools.

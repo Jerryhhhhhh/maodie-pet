@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "spritesheet_sha256": "a6b924845704ff812247841a43b3aff2655297af93dad1198848c9355a9d3932",
   "encoded_bytes": 3011435,
   "required_frames": 73,
@@ -64,5 +64,19 @@
     "Near-vertical diagonal gaze has a subtle horizontal component; reviewed in labeled loop.",
     "Minor head-perspective changes at direction-row boundaries were visually reviewed."
   ],
-  "errors": []
+  "errors": [],
+  "compatibility_exports": {
+    "web_v1": {
+      "sha256": "c8daf8dcde43e40663e4bcf279815884d7b41b301c3d98e9fe10d17b5c766497",
+      "encoded_bytes": 2381583,
+      "width": 1536,
+      "height": 1872,
+      "required_frames": 57,
+      "structural_validation_passed": true,
+      "standard_animation_pixels_unchanged": true,
+      "errors": [],
+      "pets_preflight_valid": true,
+      "recipient_account_import_tested": false
+    }
+  }
 }

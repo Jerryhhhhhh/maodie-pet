@@ -1,7 +1,7 @@
 {
   "name": "耄耋",
   "slug": "maodie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "真实照片风格的耄耋宠物：工作敲键盘，报错棘背龙形态，弯爪催回复，长哈气验收。",
   "share_url": "https://chatgpt.com/s/sharepet_6ad9c35332288191add36239fb5688ce",
   "spritesheet": "assets/maodie-spritesheet.png",
@@ -192,6 +192,35 @@
         220
       ],
       "installed_in_main": false
+    }
+  },
+  "share_link_status": {
+    "cross_account_adoption_verified": false,
+    "permission_denied_reported": true,
+    "checked_on": "2026-10-25",
+    "note": "Recipient account/workspace must support Pets and permit the shared resource. Downloading the files does not require this share link."
+  },
+  "exports": {
+    "web_v1": {
+      "spritesheet": "assets/maodie-spritesheet-web-v1.png",
+      "sprite_version": 1,
+      "width": 1536,
+      "height": 1872,
+      "frames": 57,
+      "frames_per_row": [
+        6,
+        8,
+        8,
+        4,
+        5,
+        8,
+        6,
+        6,
+        6
+      ],
+      "sha256": "c8daf8dcde43e40663e4bcf279815884d7b41b301c3d98e9fe10d17b5c766497",
+      "standard_animation_pixels_unchanged": true,
+      "includes_look_directions": false
     }
   }
 }
